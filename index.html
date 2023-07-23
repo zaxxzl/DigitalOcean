@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stock VPS DigitalOcean</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    main {
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    section.vps-card {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 20px;
+      margin: 10px;
+      max-width: 300px;
+      text-align: center;
+      animation-duration: 1s;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin: 0;
+      padding: 20px;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin: 0 0 10px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    p {
+      font-size: 16px;
+      margin: 0;
+    }
+
+    button.buy-button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button.buy-button:hover {
+      background-color: #45a049;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    footer ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    footer ul li {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    .loading-icon {
+      display: none;
+      border: 4px solid rgba(0, 0, 0, 0.1);
+      border-left: 4px solid #4CAF50;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      animation: spin 2s linear infinite;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 999;
+    }
+
+    @keyframes spin {
+      0% { transform: translate(-50%, -50%) rotate(0deg); }
+      100% { transform: translate(-50%, -50%) rotate(360deg); }
+    }
+
+    /* Animasi fadeInUp */
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fadeInUp {
+      animation-name: fadeInUp;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Stock VPS DigitalOcean</h1>
+  </header>
+  <main>
+    <section class="vps-card fadeInUp">
+      <h2>Harga : Rp. 15.000 / $1</h2>
+      <ul>
+        <li>√ Ram 1GB Memory</li>
+        <li>√ vCPU 1 Core</li>
+        <li>√ Bandwidth 1TB</li>
+        <li>√ Storage 25GB</li>
+      </ul>
+      <p>Support All</p>
+      <p>Tunneling Lancar</p>
+      <p>SSH Lancar</p>
+      <p>Bergaransi</p>
+      <p>Free Install untuk Ram 4-8</p>
+      <button class="buy-button" onclick="redirectToWhatsApp()">Beli Sekarang</button>
+    </section>
+    <section class="vps-card fadeInUp">
+      <h2>Harga : Rp. 20.000 / $1,65</h2>
+      <ul>
+        <li>√ Ram 2GB Memory</li>
+        <li>√ vCPU 1 Core</li>
+        <li>√ Bandwidth 2TB</li>
+        <li>√ Storage 50GB</li>
+      </ul>
+      <p>Support All</p>
+      <p>Tunneling Lancar</p>
+      <p>SSH Lancar</p>
+      <p>Bergaransi</p>
+      <p>Free Install untuk Ram 4-8</p>
+      <button class="buy-button" onclick="redirectToWhatsApp()">Beli Sekarang</button>
+    </section>
+    <section class="vps-card fadeInUp">
+      <h2>Harga : Rp. 25.000 / $2</h2>
+      <ul>
+        <li>√ Ram 2GB Memory</li>
+        <li>√ vCPU 2 Core</li>
+        <li>√ Bandwidth 3TB</li>
+        <li>√ Storage 60GB</li>
+      </ul>
+      <p>Support All</p>
+      <p>Tunneling Lancar</p>
+      <p>SSH Lancar</p>
+      <p>Bergaransi</p>
+      <p>Free Install untuk Ram 4-8</p>
+      <button class="buy-button" onclick="redirectToWhatsApp()">Beli Sekarang</button>
+    </section>
+    <section class="vps-card fadeInUp">
+      <h2>Harga : Rp. 35.000 / $2,97</h2>
+      <ul>
+        <li>√ Ram 4GB Memory</li>
+        <li>√ vCPU 2 Core</li>
+        <li>√ Bandwidth 4TB</li>
+        <li>√ Storage 80GB</li>
+      </ul>
+      <p>Support All</p>
+      <p>Tunneling Lancar</p>
+      <p>SSH Lancar</p>
+      <p>Bergaransi</p>
+      <p>Free Install untuk Ram 4-8</p>
+      <button class="buy-button" onclick="redirectToWhatsApp()">Beli Sekarang</button>
+    </section>
+    <section class="vps-card fadeInUp">
+      <h2>Harga : Rp. 70.000 / $5,61</h2>
+      <ul>
+        <li>√ Ram 8GB Memory</li>
+        <li>√ vCPU 4 Core</li>
+        <li>√ Bandwidth 5TB</li>
+        <li>√ Storage 160GB</li>
+      </ul>
+      <p>Support All</p>
+      <p>Tunneling Lancar</p>
+      <p>SSH Lancar</p>
+      <p>Bergaransi</p>
+      <p>Free Install untuk Ram 4-8</p>
+      <button class="buy-button" onclick="redirectToWhatsApp()">Beli Sekarang</button>
+    </section>
+    <!-- Tambahkan daftar harga lainnya sesuai kebutuhan Anda -->
+  </main>
+  <footer>
+    <p>My Contact :</p>
+    <ul>
+      <li>WhatsApp : <a href="https://wa.me/6281330251835">IrulLz Developers</a></li>
+      <li>Telegram : <a href="https://t.me/rulzxyz">https://t.me/rulzxyz</a></li>
+      <li>Testimoni : <a href="https://t.me/irulzpedia"> Testimoni Tele</a></li>
+    </ul>
+  </footer>
+
+  <div class="loading-icon" id="loadingIcon"></div>
+
+  <script>
+    function redirectToWhatsApp() {
+      // Tampilkan animasi loading saat tombol diklik
+      document.getElementById('loadingIcon').style.display = 'block';
+      
+      // Simulasi penundaan selama 2 detik sebelum mengarahkan ke WhatsApp (gantilah dengan aksi sebenarnya jika diperlukan)
+      setTimeout(function() {
+        window.location.href = "https://wa.me/6281330251835";
+      }, 2000);
+    }
+  </script>
+</body>
+</html>
